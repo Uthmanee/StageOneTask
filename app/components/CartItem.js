@@ -40,7 +40,17 @@ function CartItem({ item }) {
           <RowContainer>
             <Text style={styles.price}>$ {state.price}</Text>
             <QuantityChange
-              increaseQuantity={increaseQuantity}
+              increaseQuantity={() => {
+                cartCtx.addToCart(
+                  {
+                    ...item,
+                    price: state.price,
+                    quantity: state.quantity,
+                  },
+                  "cart"
+                );
+                increaseQuantity();
+              }}
               decreaseQuantity={decreaseQuantity}
               quantity={state.quantity}
             />

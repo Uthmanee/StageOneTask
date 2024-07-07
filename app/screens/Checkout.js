@@ -34,6 +34,7 @@ function CheckoutScreen({ navigate, data }) {
   const handleOrder = () => {
     setLoading(true);
     setTimeout(() => {
+      cartCtx.emptyCart();
       setLoading(false);
       SetModalVisible(true);
     }, 3000);
@@ -41,7 +42,7 @@ function CheckoutScreen({ navigate, data }) {
 
   const onCloseModal = () => {
     SetModalVisible(false);
-    navigate("cart");
+    navigate("cart", data);
   };
 
   return (

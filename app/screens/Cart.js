@@ -74,7 +74,8 @@ function CartScreen({ navigate, data }) {
         <Text style={styles.totalPrice}>$ {totalPrice}</Text>
       </RowContainer>
       <TouchableOpacity
-        style={styles.button}
+        disabled={cart.length === 0}
+        style={[styles.button, cart.length === 0 && styles.disabledButton]}
         onPress={() => navigate("checkout", data)}
       >
         <Text style={styles.checkoutText}>Proceed to Checkout</Text>
@@ -94,6 +95,11 @@ function CartScreen({ navigate, data }) {
           />
         </View>
       </TouchableOpacity>
+      {cart.length === 0 && (
+        <Text style={{ color: colors.secondaryTextColor }}>
+          Note that you can't proceed to checkout when cart is empty
+        </Text>
+      )}
       <BottomTab
         activeTab={activeTab}
         navigate={navigate}
@@ -146,6 +152,9 @@ const styles = StyleSheet.create({
   },
   detail: {
     color: colors.secondary,
+  },
+  disabledButton: {
+    backgroundColor: "rgba(0,0,0, 0.6)",
   },
   emptyContainer: {
     alignItems: "center",

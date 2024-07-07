@@ -18,10 +18,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./app/assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.Uthmanee.fashion"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "d459b7e9-1e77-43f5-a97b-2d4e61bffd14"
+      }
     }
   }
 }
