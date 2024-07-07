@@ -31,10 +31,16 @@ export const CartContextProvider = ({ children }) => {
     if (!existingItem) {
       setCart((prevCart) => [...prevCart, newItem]);
     } else {
-      if (from === "cart") {
+      if (from !== "") {
         const basePrice = existingItem.price / existingItem.quantity;
-        existingItem.price = existingItem.price + basePrice;
-        existingItem.quantity = existingItem.quantity + 1;
+        existingItem.price =
+          from === "cartIncrease"
+            ? existingItem.price + basePrice
+            : existingItem.price - basePrice;
+        existingItem.quantity =
+          from === "cartIncrease"
+            ? existingItem.quantity + 1
+            : existingItem.quantity - 1;
         setTotalPrice(cart.reduce((acc, item) => acc + item.price, 0));
         setTotalQuantity((prevQty) => prevQty + 1);
         return;

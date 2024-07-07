@@ -47,11 +47,21 @@ function CartItem({ item }) {
                     price: state.price,
                     quantity: state.quantity,
                   },
-                  "cart"
+                  "cartIncrease"
                 );
                 increaseQuantity();
               }}
-              decreaseQuantity={decreaseQuantity}
+              decreaseQuantity={() => {
+                cartCtx.addToCart(
+                  {
+                    ...item,
+                    price: state.price,
+                    quantity: state.quantity,
+                  },
+                  "cartDecrease"
+                );
+                decreaseQuantity();
+              }}
               quantity={state.quantity}
             />
           </RowContainer>
