@@ -1,0 +1,103 @@
+const products = [
+  {
+    id: 3,
+    brandName: "Nike",
+    image: require("../assets/products/product3.jpg"),
+    productDetail: "Nike Jordan High",
+    price: 280,
+    quantity: 1,
+  },
+  {
+    id: 2,
+    brandName: "The Marc Jacobs",
+    image: require("../assets/products/product2.png"),
+    productDetail: "Traveler Tote",
+    price: 195,
+    quantity: 1,
+  },
+
+  {
+    id: 4,
+    brandName: "Markavelli",
+    image: require("../assets/products/product4.jpg"),
+    productDetail: "Matelassé Shoulder Bag",
+    price: 98,
+    quantity: 1,
+  },
+  {
+    id: 12,
+    brandName: "Roller Rabit",
+    image: require("../assets/products/product12.png"),
+    productDetail: "Vado Odelle Dress",
+    price: 198,
+    quantity: 1,
+  },
+
+  {
+    id: 6,
+    brandName: "Denim Clothing",
+    image: require("../assets/products/product6.jpg"),
+    productDetail: "Short Sleeve T-Shirt",
+    price: 50,
+    quantity: 1,
+  },
+  {
+    id: 5,
+    brandName: "Nike",
+    image: require("../assets/products/product5.jpg"),
+    productDetail: "RS-X3 Puzzle",
+    price: 200,
+    quantity: 1,
+  },
+
+  {
+    id: 11,
+    brandName: "Comodo",
+    image: require("../assets/products/product11.jpg"),
+    productDetail: "Corporate Bag",
+    price: 70,
+    quantity: 1,
+  },
+  {
+    id: 9,
+    brandName: "Nike",
+    image: require("../assets/products/product9.jpg"),
+    productDetail: "Nike Sportswear",
+    price: 0,
+    quantity: 1,
+  },
+  {
+    id: 10,
+    brandName: "Nike",
+    image: require("../assets/products/product10.jpg"),
+    productDetail: "Air Max 270",
+    price: 155,
+    quantity: 1,
+  },
+  {
+    id: 7,
+    brandName: "Nike",
+    image: require("../assets/products/product7.jpg"),
+    productDetail: "574 Core",
+    price: 145,
+    quantity: 1,
+  },
+  {
+    id: 1,
+    brandName: "Axel Arigato",
+    image: require("../assets/products/product1.png"),
+    productDetail: "Clean 90 Triple Sneakers",
+    price: 245,
+    quantity: 1,
+  },
+  {
+    id: 1,
+    brandName: "Satoshi",
+    image: require("../assets/products/product15.png"),
+    productDetail: "Pink Bagpack",
+    price: 245,
+    quantity: 1,
+  },
+];
+
+export default products;
