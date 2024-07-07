@@ -63,7 +63,7 @@ const products = [
     brandName: "Nike",
     image: require("../assets/products/product9.jpg"),
     productDetail: "Nike Sportswear",
-    price: 0,
+    price: 55,
     quantity: 1,
   },
   {
