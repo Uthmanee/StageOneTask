@@ -52,14 +52,15 @@ function CartItem({ item }) {
                 increaseQuantity();
               }}
               decreaseQuantity={() => {
-                cartCtx.addToCart(
-                  {
-                    ...item,
-                    price: state.price,
-                    quantity: state.quantity,
-                  },
-                  "cartDecrease"
-                );
+                state.quantity > 1 &&
+                  cartCtx.addToCart(
+                    {
+                      ...item,
+                      price: state.price,
+                      quantity: state.quantity,
+                    },
+                    "cartDecrease"
+                  );
                 decreaseQuantity();
               }}
               quantity={state.quantity}

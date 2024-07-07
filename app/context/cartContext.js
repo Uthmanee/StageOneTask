@@ -42,7 +42,9 @@ export const CartContextProvider = ({ children }) => {
             ? existingItem.quantity + 1
             : existingItem.quantity - 1;
         setTotalPrice(cart.reduce((acc, item) => acc + item.price, 0));
-        setTotalQuantity((prevQty) => prevQty + 1);
+        setTotalQuantity((prevQty) =>
+          from === "cartIncrease" ? prevQty + 1 : prevQty - 1
+        );
         return;
       } else {
         const updatedQuantity = existingItem.quantity + newItem.quantity;
