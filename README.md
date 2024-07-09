@@ -4,20 +4,24 @@ Welcome to the Clothing Items Shopping App! This app is built using React Native
 
 ## Screenshots
 
+* Displays clothing items and navigation options.
+
 ![Products Screen](apkScreenshots/S1.png)
-*Home Screen: Displays clothing items and navigation options.*
+
+* Shows detailed information about a selected product. Has a size picker to pick preferred size of the clothing item. Has a button to set number of clothing items you want.  Has a navigation bar on top of the screen to go to cart screen and previous screen
 
 ![Product Details](apkScreenshots/S2.png)
 ![Product Details](apkScreenshots/S3.png)
-*Product Details Screen: Shows detailed information about a selected product. Has a size picker to pick preferred size of the clothing item. Has a button to set number of clothing items you want.  Has a navigation bar on top of the screen to go to cart screen and previous screen *
+
+* Shows the items added to cart. The quantity of each item in the cart can be changed directly from the cart screen. The corresponding price is updated each time the quantity is modified. Has a navigation bar on top to go to previous screen
 
 ![Cart Screen](apkScreenshots/S4.png)
-*Product Details Screen: Shows the items added to cart. The quantity of each item in the cart can be changed directly from the cart screen. The corresponding price is updated each time the quantity is modified. Has a navigation bar on top to go to previous screen *
+
+* Shows the items delivery address. Allows user to select a payment method and proceed to checkout. Has a navigation bar on top to go to previous screen.
 
 ![Checkout Screen](apkScreenshots/S4.png)
 ![Checkout Screen](apkScreenshots/S5.png)
 ![Checkout Screen](apkScreenshots/S6.png)
-*Product Details Screen: Shows the items delivery address. Allows user to select a payment method and proceed to checkout. Has a navigation bar on top to go to previous screen *
 
 ## Features
 
